@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: calc(100vh - 10rem);
+}
+
+section {
+    /* display: block; */
+    max-width: 620px;
+    width: 90vw;
+}
+
+.title {
+    margin-top: 15vh;
+    margin-bottom: 4rem;
+}
+
+.title h2 {
+    text-transform: capitalize;
+    letter-spacing: 0.2rem;
+    font-size: 1.8rem;
+    text-align: center;
+    color: rgb(63, 158, 230);
+    text-shadow: 0.2rem 0.2rem rgba(79, 151, 234, 0.305);
+}
+
+.question {
+    padding: 2rem 1.5rem;
+    margin: 2rem 0;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 15px #929191;
+    position: relative;
+}
+
+.question-title {
+    /* max-height: 1.5rem; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-title p {
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    color: rgb(63, 158, 230);
+    text-shadow: 0.1rem 0.1rem rgba(79, 151, 234, 0.305);
+    display: flex;
+    align-self: center;
+}
+
+/* button {
+    border-color: transparent;
+    background-color: transparent;
+} */
+
+.question-btn {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+    color: rgb(51, 168, 200);
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.question-btn:hover {
+    opacity: 0.5;
+    transform: rotate(90deg);
+}
+
+.plus-icon {
+    max-width: fit-content;
+}
+
+.minus-icon {
+    max-width: fit-content;
+}
+
+.minus-icon i {
+    width: 21px;
+}
+
+/* .minus-icon {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.5s ease 0s;
+    color: rgb(51, 168, 200);
+    display: none;
+    border-color: transparent;
+    background-color: transparent;
+} */
+
+/* .minus-icon:hover {
+    opacity: 0.5;
+    transform: rotate(90deg);
+} */
+
+.question-text {
+    border-top: 0.1rem solid rgb(146, 145, 145);
+    padding-top: 1rem;
+    margin-top: 2rem;
+    color: rgb(83, 83, 83);
+    line-height: 1.2rem;
+    font-size: 0.9rem;
+}
+
+.question-text {
+    display: none;
+}
+.show-text .question-text {
+    display: block;
+}
+.minus-icon {
+    display: none;
+}
+.show-text .minus-icon {
+    display: inline;
+}
+.show-text .plus-icon {
+    display: none;
+}
+
